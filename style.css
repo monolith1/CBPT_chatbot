@@ -1,0 +1,107 @@
+body {
+	background-color: #F2CAA7;
+}
+
+/* I was experimenting with overflow here. I meant to make it look this way, it's not incidental. */
+
+h1 {
+	position: fixed;
+	z-index: 0;
+	margin: 10px;
+	color: #F2EEB3;
+	background-color: #011126;
+	overflow: visible;
+	font-size: 200px;
+	height: 700px;
+	width: 325px;
+	text-align: center;
+	padding: 20px;
+	font-family: 'UnifrakturMaguntia';
+} 
+
+/* this grid will hold new instances of chat messages by adding rows each time a message is created. */
+
+.convo {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 100%;
+	justify-content: center;
+	grid-auto-rows: 1fr; 
+}
+
+.botMsg {
+	background-color: #595959;
+	color: #F2EEB3;
+	padding: 14px;
+	margin-left: 1000px;
+	margin-bottom: 0px;
+	margin-right: 30px;
+	justify-self: left;
+	font-family: sans-serif;
+	font-size: 22px;
+	border-radius: 5px;
+}
+
+.botMsgTime {
+	margin-left: 1000px;
+	margin-bottom: 20px;
+	margin-right: 30px;
+	justify-self: left;
+	font-family: sans-serif;
+	font-size: 11px;
+	font-style: italic;
+}
+
+.userMsg {
+	background-color: #D9B391;
+	color: #011126;
+	padding: 14px;
+	margin-left: 1000px;
+	margin-bottom: 0px;
+	margin-right: 30px;
+	justify-self: right;
+	font-family: sans-serif;
+	font-size: 22px;
+	border-radius: 5px;
+}
+
+.userMsgTime {
+	margin-left: 1000px;
+	margin-bottom: 20px;
+	margin-right: 30px;
+	justify-self: right;
+	font-family: sans-serif;
+	font-size: 11px;
+	font-style: italic;
+}
+
+.input {
+	position: fixed;
+	bottom: 10px;
+	max-width: 100%;
+	text-align: right;
+	margin: auto;
+}
+
+#response {
+	text-align: left;
+	margin: 50px;
+	margin-right: 10px;
+	font-family: sans-serif;
+	font-size: 22px;
+	padding: 14px;
+	width: 500px;
+}
+
+#responseButton {
+	font-family: 'UnifrakturMaguntia';
+	font-size: 22px;
+	padding: 14px;
+}
+
+/* background-color: #011126;
+			DARK: #011126;
+			LIGHT: #F2EEB3
+			MED: #D9B391;
+			LT MD: #F2CAA7;
+			DRK MD: #595959; */
