@@ -1,1 +1,1 @@
-simple chatbot made with react.js, css, html
+simple chatbot made with jQuery, css, html
